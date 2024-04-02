@@ -117,6 +117,23 @@ fun FilmCard(film: Film, modifier: Modifier = Modifier, navController: NavContro
                 )
             }
         }
+        else {
+            Box(modifier = Modifier
+                .padding(10.dp)
+                .border(3.dp, Color.Green)
+                .background(Color.White)
+            ) {
+                Text(
+                    text = film.seats_remaining.toString() + " seats remaining",
+                    fontFamily = robotoCondensed,
+                    fontSize = 12.sp,
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier
+                        .align(Alignment.BottomEnd)
+                        .padding(5.dp)
+                )
+            }
+        }
     }
 }
 
