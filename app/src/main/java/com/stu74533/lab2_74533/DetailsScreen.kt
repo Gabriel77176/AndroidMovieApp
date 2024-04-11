@@ -177,7 +177,7 @@ fun DetailsScreen(filmInd: String, navController: NavController, filmList: List<
                     }
                 },
                     contentPadding = PaddingValues(10.dp),
-                    colors = if (seatTaken.value == film.seats_remaining)
+                    colors = if (film.seats_remaining == 0)
                     {
                         ButtonDefaults.buttonColors(Color(0xFF888888))
                     }
@@ -216,7 +216,7 @@ fun DetailsScreen(filmInd: String, navController: NavController, filmList: List<
                     shape = RectangleShape,
                     modifier = Modifier
                         .fillMaxWidth()
-                        .height(60.dp)
+                        //Q.height(60.dp)
                         .clip(RoundedCornerShape(10.dp))
                         .padding(10.dp)
                 ) {

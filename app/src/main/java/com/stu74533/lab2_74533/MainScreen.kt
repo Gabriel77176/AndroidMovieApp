@@ -87,14 +87,15 @@ fun FilmCard(film: Film, modifier: Modifier = Modifier, navController: NavContro
             UrlImage(
                 url = film.image,
                 modifier = Modifier
-                    .width(130.dp)
+                    //.width(130.dp)
+                    .fillMaxWidth()
                     .height(190.dp)
             )
             Box (contentAlignment = Alignment.Center,
                 modifier = Modifier
                     .fillMaxSize()
-                    .padding(1.dp)
                     .background(Color.White)
+                    .padding(1.dp)
             ) {
                 SimpleText(text = film.title)
             }
