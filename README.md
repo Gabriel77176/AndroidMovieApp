@@ -13,7 +13,7 @@
 - [x] If any seats are selected, show how many seats are selected and hide remaining seats
 
 ## 2. Seat selection feature:
-- [ ] Clicking any item (anywhere on the item) on the movie screen should open a new MovieActivity, refer to movie_activity_*.jpg
+- [x] Clicking any item (anywhere on the item) on the movie screen should open a new MovieActivity, refer to movie_activity_*.jpg
 - [x] Add plus and minus icons, show seats_selected in the middle
 - [x] On click plus/minus, update both seats_selected and seats_remaining for that movie
 - [x] Add validation, when 0 seats selected minus is disabled, when 0 seats remaining plus is disabled
